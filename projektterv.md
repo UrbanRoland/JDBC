@@ -1,7 +1,8 @@
 # `MINTA` Projektterv 2019
 
 ## 1. Összefoglaló 
-`Ide írd le tömören, hogy miről szól a projekt, amit a gyakorlatvezetőtől kaptatok. Mik a fő célok, miért van rá szükség. A dokumentumban a pirossal kiemelt szövegeknek két jelentése van: (a) sablon szöveg, amit le kell cserélni, pl. gyakorlatvezető neve; (b) segítő/magyarázó szöveg. Az átadott dokumentumban nem szerepelhetnek pirossal kiemelt részek! A feketével írt részek maradhatnak, azok közösek.`
+A kiválasztott feladat egy vasúti információszolgáltató és jegykiadó rendszer oldal létrehozása, mely magában foglalja a projekt főbb
+életciklusait, kezdve a tervezési fázistól, egészen a számítógépes implementációig. Az oldal mintájául at elvira.hu, közismert online információszolgáltató és jegykiadó rendszert vettük. Természetesen, törekedünk a funkcionalitás teljes tárházát nyújtani, de ez jelen körülmények között nem megoldható.
 
 ## 2. Verziók
 
