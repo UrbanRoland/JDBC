@@ -1,6 +1,5 @@
 package connection;
 
-
 import java.sql.Connection;
 import java.sql.DatabaseMetaData;
 import java.sql.DriverManager;
@@ -114,7 +113,7 @@ public class DB {
 
 	public ArrayList<User> getAllUsers() {
 		String sql = "select * from users";
-		ArrayList<User> users=null;
+		ArrayList<User> users = null;
 		try {
 			ResultSet rs = createStatement.executeQuery(sql);
 			users = new ArrayList<>();
@@ -131,6 +130,35 @@ public class DB {
 		}
 
 		return users;
+	}
+
+	public void showAllUsersName() {
+		String sql = "select name from users";
+		try {
+			ResultSet rs = createStatement.executeQuery(sql);
+			while (rs.next()) {
+				String name = rs.getString("name");
+
+				System.out.println(name);
+			}
+		} catch (SQLException e) {
+			System.out.println("Something went wrong when you show all users name!");
+			System.out.println(" " + e);
+		}
+	}
+
+	public void deleteAllUser() {
+		String sql = "delete from users";
+		Statement st = null;
+		try {
+
+			st = conn.createStatement();
+			st.executeUpdate(sql);
+
+		} catch (SQLException e) {
+			System.out.println("Something went wrong when you delete all users!");
+			System.out.println(" " + e);
+		}
 	}
 
 }
